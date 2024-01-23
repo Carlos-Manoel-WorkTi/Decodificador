@@ -72,6 +72,7 @@ main{
     resize: none; 
     overflow: hidden;
     box-shadow: 0 0 10px rgb(56, 7, 152);
+
 }
 
 /* BUTOES */
@@ -91,18 +92,24 @@ main{
     border-radius: 20px;
     outline: none;
     background: linear-gradient(to right,rgb(56, 7, 152),rgb(56, 3, 126));
-    color: white;
+    color: rgb(255, 255, 255);
     
 }
 
 /* Lista decodificada */
-#lista_cript{
+#lista_cript {
     width: 30%;
     height: 200px;
-    background: linear-gradient(to bottom,rgb(21, 20, 20),transparent);
+    background: linear-gradient(to bottom, rgba(21, 20, 20, 0.8), transparent);
     border-radius: 10px;
     padding: 10px;
+    border: 1px solid rgba(194, 172, 237, 0.66); /* Alterado para adicionar transparência à borda */
+    box-shadow: 0 0 10px rgba(67, 65, 71, 0.575) inset; /* Adiciona sombra interna para efeito 3D */
+    backdrop-filter: blur(3px); /* Adiciona o efeito de vidro */
 }
+
+
+
 #ul_lista{
     color: white;
     display: flex;
@@ -122,7 +129,7 @@ main{
     justify-content: space-between;
 }
 
-/* mensagem decodificada */
+/* mensagem codificada */
 .copy{
     background-color: transparent;
     border: none    ;
