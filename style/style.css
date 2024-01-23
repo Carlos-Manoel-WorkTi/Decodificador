@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#body{
+    /* background: linear-gradient(to right, rgb(0, 0, 0),black,transparent), url('../public/bd.jpg') center/cover no-repeat; */
+    background-image: url('../public/bd.jpg') ;
+    overflow: hidden;
+    
+}
+#header{
+   background: linear-gradient(to right,black,black,transparent);
+   padding: 20px;
+}
+
+main{
+    background: linear-gradient(to right,black,black,transparent);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+@keyframes glowAnimation {
+    0%{
+        -webkit-text-stroke: 1px white;
+        
+    }
+    50% {
+        -webkit-text-stroke: 1px #6017ad; /* Lilás */
+    }
+}
+
+#logo {
+    position: relative;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 2.4em;
+    animation: glowAnimation 3s infinite;
+        
+}
+
+#logo::before {
+    content: attr(data-text); /* Usando o texto real do elemento como conteúdo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+#section_01{
+    margin-top: 30px;
+    height: 84vh
+}
+
+
+
+/* Texto */
+#input_text {
+    height: 300px;
+    width: 450px;
+    border: 1px solid #380380;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+    outline: none;
+    color: white;
+    padding: 10px;
+    padding-top: 10px; 
+    font-size: 1.3em;
+    resize: none; 
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(56, 7, 152);
+}
+
+/* BUTOES */
+#butoes{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    padding: 10px 0;
+}
+#Codificar,#Descodificar{
+    height: 50px;
+    width: 130px;
+    font-size: 1.2em;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: linear-gradient(to right,rgb(56, 7, 152),rgb(56, 3, 126));
+    color: white;
+    
+}
+
+/* Lista decodificada */
+#lista_cript{
+    width: 30%;
+    height: 200px;
+    background: linear-gradient(to bottom,rgb(21, 20, 20),transparent);
+    border-radius: 10px;
+    padding: 10px;
+}
+#ul_lista{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+}
+
+.frase_cript {
+    background-color: transparent;
+    border: 1px solid rgb(95, 90, 195);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(55, 7, 152, 0.446); /* Adiciona uma sombra */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mensagem decodificada */
+.copy{
+    background-color: transparent;
+    border: none    ;
+}
+.img_cpy{
+    width: 20px;
+    
+}
+.img_cpy:hover{
+    transform: scale(1.3);
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #body{
+        overflow: scroll;
+        
+    }
+    #header{
+       padding: 20px;
+    }
+    
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo {
+        font-size: 2em;
+    }
+    
+    #section_01{
+        margin-top: 30px;
+        height:48vh;
+        width: 80%;
+    }
+    
+    
+    
+    /* Texto */
+    #input_text {
+        height: 200px;
+        width:auto;
+        border: 1px solid #380380;
+        border-radius: 10px;
+        background-color: rgb(15, 15, 15);
+        outline: none;
+        color: white;
+        padding: 10px;
+        padding-top: 10px; 
+        font-size: 1.3em;
+        resize: none; 
+        overflow: hidden;
+        box-shadow: 0 0 10px rgb(56, 7, 152);
+    }
+    
+    /* BUTOES */
+    #butoes{
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+        width: 100%;
+        padding: 10px 0;
+    }
+    #Codificar,#Descodificar{
+        height: 50px;
+        width: 130px;
+        font-size: 1.2em;
+        padding: 5px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background: linear-gradient(to right,rgb(56, 7, 152),rgb(56, 3, 126));
+        color: white;
+        
+    }
+    
+    /* Lista decodificada */
+    #lista_cript{
+        width: 80%;
+        height: auto;
+        background: linear-gradient(to bottom,rgb(21, 20, 20),rgb(10, 10, 10));
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 50px;
+        min-height: 150px;
+    }
+    #ul_lista{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        padding: 20px;
+    }
+    
+    .frase_cript {
+        background-color: transparent;
+        border: 1px solid rgb(95, 90, 195);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(55, 7, 152, 0.446); /* Adiciona uma sombra */
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* mensagem decodificada */
+    .copy{
+        background-color: transparent;
+        border: none    ;
+    }
+    .img_cpy{
+        width: 20px;
+        
+    }
+    .img_cpy:hover{
+        transform: scale(1.3);
+    
+    }
+    
+    
+    
+    #input_text:focus{
+        #lista_cript {
+            margin-top: 70px;
+        }
+    }
+    
+    
+  }
