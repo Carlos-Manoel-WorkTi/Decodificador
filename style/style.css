@@ -177,7 +177,7 @@ main{
     /* Texto */
     #input_text {
         height: 200px;
-        width:auto;
+        width: 90%;
         border: 1px solid #380380;
         border-radius: 10px;
         background-color: rgb(15, 15, 15);
@@ -201,7 +201,7 @@ main{
     }
     #Codificar,#Descodificar{
         height: 50px;
-        width: 130px;
+        width: 125px;
         font-size: 1.2em;
         padding: 5px;
         border: none;
@@ -209,6 +209,7 @@ main{
         outline: none;
         background: linear-gradient(to right,rgb(56, 7, 152),rgb(56, 3, 126));
         color: white;
+        margin-right: 5px;
         
     }
     
